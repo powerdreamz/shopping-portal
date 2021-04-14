@@ -4,7 +4,7 @@ pipeline{
 
 // uncomment the following lines by removing /* and */ to enable
     tools{
-       maven 'Maven 3.6.3' 
+       nodejs 'nodejs' 
     }
     
 
@@ -12,7 +12,7 @@ pipeline{
         stage('build'){
             steps{
                 echo 'this is the build job'
-                sh 'npm install'       
+                sh 'npm install'
             }
         }
         stage('test'){
